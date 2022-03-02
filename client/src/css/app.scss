@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+@use "page/nav";
+@use "page/toppage";
+@use "page/projectpage";
+@use "page/projectdetail";
+@use "page/about";
+@use "page/contact";
+
+@use "setting/color" as *;
+@use "setting/font" as *;
+@use "setting/mixin" as *;
+@use "setting/button" as *;
+@use "setting/tag" as *;
+
+//react-image-gallery
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+
+.\? {
+  box-shadow: inset 4px 4px rgb(236, 15, 170), inset -4px -4px rgb(236, 15, 170);
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+p {
+  margin: 0;
+  padding: 0;
+  font-family: $font-sentence;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.app-con {
+  height: 100vh;
+
+  width: 100%;
+  // height: 100%;
+  position: fixed;
+  z-index: -1;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.app-con-background-top {
+  background: url("../image/background-top.png") no-repeat right center;
+  background-size: contain;
+  background-color: $color-main;
+
+  // background-attachment: fixed;
+  // background-image: url("../image/background-top.png");
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+
+  @media (max-width: 500px) {
+    background-position: right 0 bottom 0;
+  }
+}
+.app-con-background-project {
+  @include backgroundImage(url("../image/background-project.jpg"));
+  background-position: right 0 bottom 0;
+}
+.app-con-background-about {
+  @include backgroundImage(url("../image/background-about.jpg"));
+}
+.app-con-background-contact {
+  @include backgroundImage(url("../image/background-contact.jpg"));
+
+  // @media (max-width: 900px) {
+  //   background-position: right 0;
+  // }
+  // @media (max-width: 580px) {
+  //   height: 120vh;
+  // }
+  // @media (max-width: 564px) {
+  //   height: 125vh;
+  // }
+  // @media (max-width: 435px) {
+  //   height: 130vh;
+  // }
+  // @media (max-width: 323px) {
+  //   height: 137vh;
+  // }
+}

@@ -1,0 +1,283 @@
+@use "../setting/color" as *;
+@use "../setting/font" as *;
+@use "../setting/mixin" as *;
+
+.nav-con-background-top {
+  background-color: $color-main;
+}
+.nav-con-background-project {
+  background-color: $color-third-5;
+}
+.nav-con-background-about {
+  background-color: $color-backl-5;
+}
+.nav-con-background-contact {
+  background-color: $color-second-5;
+}
+
+.nav-hover-top:hover {
+  color: $color-second;
+}
+.nav-hover-project:hover {
+  color: $color-main;
+}
+.nav-hover-about:hover {
+  color: $color-third;
+}
+.nav-hover-contact:hover {
+  color: $color-main;
+}
+
+.translateXOpen {
+  transform: translateX(0);
+  transition: 0.5s;
+}
+.translateXClose {
+  transform: translateX(100%);
+  transition: 0.5s;
+}
+
+.nav-con {
+  color: white;
+  // height: 6%;
+
+  height: 6vh;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+
+  position: relative;
+
+  &-1 {
+    height: 100%;
+    margin: 0 auto;
+    position: absolute;
+    left: 40%;
+
+    @include alignFlexCenter();
+
+    a {
+      padding-top: 0.6rem;
+      @include linkAndHover();
+      font-family: $font-title;
+    }
+  }
+
+  &-2 {
+    &-ul {
+      height: 100%;
+      position: absolute;
+      right: 0;
+      margin-right: 1rem;
+
+      @include alignFlexCenter();
+
+      &-link {
+        margin-right: 1rem;
+        @include linkAndHover();
+      }
+    }
+  }
+
+  .burgerNav {
+    background-color: $color-backd-8;
+    width: 40%;
+    height: 30vh;
+    position: absolute;
+    right: 0;
+    z-index: 50;
+
+    padding: 2rem;
+
+    &-ul {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      &-link {
+        text-decoration: none;
+        padding-top: 1rem;
+        color: white;
+        font-size: 1.3rem;
+        transition: 0.5s;
+        position: relative;
+
+        &::after {
+          content: "\00bb";
+          position: absolute;
+          font-size: 1.3rem;
+          opacity: 0;
+          padding-left: 2rem;
+          transition: 0.5s;
+        }
+        hr {
+          width: 30%;
+          height: 0.2rem;
+          margin-top: -0.3rem;
+          transition: 0.5s;
+        }
+
+        &:hover {
+          &::after {
+            opacity: 1;
+          }
+          hr {
+            width: 60%;
+          }
+        }
+      }
+
+      &:hover {
+        transition: 0.3s all ease-in;
+      }
+    }
+
+    &-burger {
+    }
+  }
+}
+
+/* Normal */
+@media (min-width: 769px) and (max-width: 850px) {
+  .nav-con {
+    &-1 {
+      left: 30%;
+
+      a {
+      }
+    }
+
+    &-2 {
+      &-ul {
+        &-link {
+        }
+      }
+    }
+  }
+}
+
+/* tablet */
+@media (min-width: 501px) and (max-width: 768px) {
+  .nav-con {
+    &-1 {
+      left: 35%;
+      @media (min-width: 501px) and (max-width: 600px) {
+        left: 33%;
+      }
+
+      a {
+      }
+    }
+
+    &-2 {
+      &-ul {
+        &-link {
+        }
+      }
+    }
+
+    .burgerNav {
+      width: 30%;
+      height: 30vh;
+
+      @media (min-width: 501px) and (max-width: 600px) {
+        width: 40%;
+      }
+
+      // padding: 2rem;
+
+      &-ul {
+        // display: flex;
+        // flex-direction: column;
+        // margin: auto;
+      }
+
+      &:hover {
+        // transition: 0.3s all ease-in;
+      }
+    }
+  }
+}
+
+/* Smartphone L */
+@media (min-width: 376px) and (max-width: 500px) {
+  .nav-con {
+    &-1 {
+      left: 31%;
+
+      a {
+        h3 {
+          font-size: 1.3rem;
+        }
+      }
+    }
+
+    &-2 {
+      &-ul {
+        &-link {
+        }
+      }
+    }
+    .burgerNav {
+      width: 40%;
+      height: 30vh;
+
+      @media (min-width: 376px) and (max-width: 435px) {
+        width: 48%;
+        padding: 1rem;
+      }
+
+      &-ul {
+        // display: flex;
+        // flex-direction: column;
+        // margin: auto;
+      }
+
+      &:hover {
+        // transition: 0.3s all ease-in;
+      }
+    }
+  }
+}
+
+/* Smartphone S_M */
+@media (max-width: 375px) {
+  .nav-con {
+    &-1 {
+      left: 5%;
+
+      a {
+        h3 {
+          font-size: 1.3rem;
+        }
+      }
+    }
+
+    &-2 {
+      &-ul {
+        &-link {
+        }
+      }
+    }
+
+    .burgerNav {
+      width: 50%;
+      height: 25vh;
+      padding: 0.8rem;
+
+      &-ul {
+        // display: flex;
+        // flex-direction: column;
+        // margin: auto;
+
+        &-link {
+          font-size: 1rem;
+        }
+      }
+
+      &:hover {
+        // transition: 0.3s all ease-in;
+      }
+    }
+  }
+}

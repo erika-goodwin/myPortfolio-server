@@ -1,0 +1,21 @@
+@use "../setting/color" as *;
+
+@mixin tag {
+  padding: 1rem;
+  ul {
+    width: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    // flex-wrap: wrap;
+    justify-content: space-around;
+    li {
+      list-style-type: none;
+      background-color: $color-backl-8;
+      padding: 0.5rem;
+      border-radius: 0.7rem;
+      margin-right: 1rem;
+    }
+  }
+}

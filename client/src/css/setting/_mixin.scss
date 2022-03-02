@@ -1,0 +1,76 @@
+@use "../setting/color" as *;
+
+@mixin backgroundImage($url) {
+  background-image: $url;
+  background-repeat: none;
+  background-size: cover;
+}
+
+@mixin alignFlexCenter {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+}
+
+@mixin linkAndHover {
+  color: white;
+
+  text-decoration: none;
+
+  &:hover {
+    // color: $color-main;
+    transition: 0.3s all ease-in;
+  }
+}
+
+@mixin flexColCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@mixin aboutPicWidHei {
+  @media (min-width: 1201px) {
+    width: 200px;
+    height: 280px;
+  }
+
+  width: 200px;
+  height: 280px;
+
+  @media (min-width: 769px) and (max-width: 1200px) {
+    width: 150px;
+    height: 210px;
+  }
+
+  /* tablet */
+  @media (min-width: 741px) and (max-width: 768px) {
+    width: 120px;
+    height: 168px;
+  }
+  @media (min-width: 595px) and (max-width: 740px) {
+    width: 100px;
+    height: 140px;
+  }
+  @media (min-width: 501px) and (max-width: 594px) {
+    width: 120px;
+    height: 168px;
+  }
+
+  /* Smartphone L */
+  @media (min-width: 431px) and (max-width: 500px) {
+    width: 120px;
+    height: 168px;
+  }
+  @media (min-width: 376px) and (max-width: 430px) {
+    width: 80px;
+    height: 112px;
+  }
+
+  /* Smartphone S_M */
+  @media (max-width: 375px) {
+    width: 80px;
+    height: 112px;
+  }
+}
