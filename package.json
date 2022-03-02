@@ -1,0 +1,41 @@
+{
+  "name": "myproject-2-portofolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "proxy": "http://localhost:3001",
+  "engines": {
+    "node": "v16.13.1"
+  },
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js",
+    "build": "cd client && npm install && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erika-goodwin/myproject-2-portofolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erika-goodwin/myproject-2-portofolio/issues"
+  },
+  "homepage": "https://github.com/erika-goodwin/myproject-2-portofolio#readme",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "express-async-errors": "^3.1.1",
+    "express-react-views": "^0.11.0",
+    "mongodb": "^4.3.1",
+    "mongoose": "^6.2.0",
+    "nodemailer": "^6.7.2",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

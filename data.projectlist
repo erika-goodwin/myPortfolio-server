@@ -1,0 +1,122 @@
+{
+	"title": "Node Blog App",
+	"LangTag": [
+		"Node.js",
+		"Exprss",
+		"MongoDB",
+		"ejs",
+		"Tailwindcss",
+		"Heroku"
+	],
+	"deployedUrl": "https://node-mongo-blog-app.herokuapp.com/api/blogs",
+	"githubUrl": "https://github.com/erika-goodwin/a0521-node-midpr/tree/master",
+	"summary": "Keep your thoughts and mind in mongoDB",
+	"description": "This is the node application with express for blog. The client side is made with React.js and Redux. The database is Mongodb with Mongoose.",
+	"image": [
+		{
+			"original": "/projectlist-image/nodeblogapp-pic1.png",
+			"thumbnail": "/projectlist-image/nodeblogapp-pic1.png"
+		},
+		{
+			"original": "/projectlist-image/nodeblogapp-pic2.png",
+			"thumbnail": "/projectlist-image/nodeblogapp-pic2.png"
+		},
+		{
+			"original": "/projectlist-image/nodeblogapp-pic3.png",
+			"thumbnail": "/projectlist-image/nodeblogapp-pic3.png"
+		}
+	],
+	"bulletPoint": [
+		{
+			"header": "Why did I make this?",
+			"content": "I like learning new things and practicing until I understand it. I learned the basics of Node.js and how amazing ejs is at the moment. As a beginner of backend side language, I felt creating the most basic function like CRUD is a must-do project.. "
+		},
+		{
+			"header": "What did I learn from this project?",
+			"content": "I learned the basic structure of Node.js and how to connect MongoDB. I had fun with MongoDB. It is user-friendly and easy to connect yet a very powerful tool!"
+		},
+		{
+			"header": "Improvement for next time? ",
+			"content": "I learned MongoDB first, then learned mongoose. This is why I used MongoDB for this project along with Joi schema. For additional practice and a real-world app, I would like to create a project with mongoose. And that is what I did! "
+		}
+	]
+},
+
+{
+	"title": "React Weather App",
+	"LangTag": [
+		"React.js",
+		"Tailwindcss",
+		"ThirdParty API"
+	],
+	"deployedUrl": "https://afternoon-ravine-59477.herokuapp.com/",
+	"githubUrl": "https://github.com/erika-goodwin/a-0521-react-midpr/tree/Main",
+	"summary": "Check today's weather in the world",
+	"description": "This is the react application to check the weather. You can also check the local time of the city. The weather data is fetched from Weather API - OpenWeatherMap.",
+	"image": [
+		{
+			"original": "/projectlist-image/nodeblogapp-pic3.png",
+			"thumbnail": "/projectlist-image/nodeblogapp-pic3.png"
+		},
+		{
+			"original": "/projectlist-image/nodeblogapp-pic4.png",
+			"thumbnail": "/projectlist-image/nodeblogapp-pic4.png"
+		}
+	],
+	"bulletPoint": [
+		{
+			"header": "Why did I make this?",
+			"content": "I was learning basics of React hook, React router, and Redux at the time. My teacher told me that there are many APIs we can use for free and showed me what we can do. I thought it was a great idea to try using API myself. "
+		},
+		{
+			"header": "What was challenging?",
+			"content": "I always try to use a language or tool that I have never used before as I believe practice helps expand my knowledge. While I was working on this project, I was struggling with routes. As a result, I chose to add an additional page and became more familiar with it. "
+		},
+		{
+			"header": "What did I learn from this project?",
+			"content": "Between you and me... I learned how to cheat on the UI design from this project. When I try a new language or tool, I want to spend time learning basic rules before starting to read codes. It will help me better understand and have fun with all the processes. For this purpose, I can cheat on something I already practiced such as CSS this time. Still, I learned how to use the new tool Tailwindcss though! Everyday learning!"
+		}
+	]
+},
+{
+	"title": "Expense App with Authorizing",
+	"LangTag": [
+		"React.ts [TS]",
+		"Node.js [TS]",
+		"Express",
+		"MongoDB/Mongoose",
+		"CSS"
+	],
+	"deployedUrl": "https://heuristic-perlman-0e7948.netlify.app/",
+	"githubUrl": "https://github.com/erika-goodwin/a-0521-node-finalpr-server/tree/master",
+	"summary": "Log in and write your daily expenses down!",
+	"description": "This is React(client)/Node(server) app with authorization function. I used typescript for both applications. The database is Mongodb with Mongoose. ",
+	"image": [
+		{
+			"original": "/projectlist-image/nodeblogapp-pic5.png",
+			"thumbnail": "/projectlist-image/nodeblogapp-pic5.png"
+		},
+		{
+			"original": "/projectlist-image/nodeblogapp-pic6.png",
+			"thumbnail": "/projectlist-image/nodeblogapp-pic6.png"
+		},
+		{
+			"original": "/projectlist-image/nodeblogapp-pic7.png",
+			"thumbnail": "/projectlist-image/nodeblogapp-pic7.png"
+		}
+	],
+	"bulletPoint": [
+		{
+			"header": "Why made me create this app?",
+			"content": "I wanted to try creating authorization function... but to be honest, it was hard!!!! My motto is 'try something new at least one!' For this project, it was trying Typescript. My developer friends told me that Typescript is better to practice since you will find errors easily and immediately. It was true and I liked it, but it also caused so many problems later..."
+		},
+		{
+			"header": "What was challenging?",
+			"content": "Of course, making the client and server was hard work. But deployment was even harder. Since I used Typescript, things are different from what I used to do and it was confusing. It took so many hours to solve many errors. Yet my knowledge and patience got better."
+		},
+		{
+			"header": "Goals for Improvement",
+			"content": "I want to learn the file structuring skill to make the project accessible to other engineers. For now, I work on projects by myself, and files are organized for me. Yet always other people's files are difficult to find by name or structures. I'd like to improve my file structuring skill in preparation for real-world work experience. "
+		}
+	]
+}
