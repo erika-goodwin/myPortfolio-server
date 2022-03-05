@@ -29,8 +29,15 @@ router.post("/send", async(req, res) => {
   //will return true is mail is sent successfully
   const mailResult = await sendEmail(name, email, subject, message);
 
-  if(mailResult){
-    return res.status(200).json({ success: true });
+  // if(mailResult){
+  //   return res.status(200).json({ success: true });
+  // }
+
+  if (mailResult) {
+    return res.status(200).json({ success: "success" }); 
+    //if you want to catch this string in client, axios return should be in res.data.success isnt it?
+  } else {
+    return res.status(422).json({ success: "fail" });
   }
 
 

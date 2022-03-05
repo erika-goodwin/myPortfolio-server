@@ -48,6 +48,7 @@ const sendEmail = async (name, email, subject, message) => {
         resolve(true);
         console.log("All done send");
       }
+      
     });
   });
 };
