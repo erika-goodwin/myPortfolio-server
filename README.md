@@ -8,7 +8,7 @@ This is a MERN app with Nodemailer. The application is designed by SASS without 
   
   - **Client side:** [Check here](https://github.com/erika-goodwin/myPortfolio-client/tree/master)
   
-  - **Check App:** [Check here](https://www.erikahashizu.me/)
+  - **Check App:** [Check here](https://erikahashizume-portfolio.netlify.app/)
   
 
 ### Why made me create this app?
@@ -30,6 +30,7 @@ Sometimes, I ask around what you think about this portfolio and receive some fee
 <img width="715" alt="Screen Shot 2022-04-28 at 9 35 28" src="https://user-images.githubusercontent.com/58070973/165801462-3ac61fe8-ee6e-4e2c-8df7-066bd97d4542.png">
 
 <img width="715" alt="Screen Shot 2022-04-28 at 9 35 37" src="https://user-images.githubusercontent.com/58070973/165801442-1b7ca719-aaf0-4c0b-a0e5-6174f9d63ad0.png">
+
 
 
 
